@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-screen-xl;
+  }
+  .button-primary {
+    @apply rounded-lg bg-primary-600 px-4 py-2 font-medium text-text-900;
+  }
+  .button-secondary {
+    @apply rounded-lg bg-secondary-100 px-4 py-2 font-medium text-text-800;
+  }
+  .button-ghost {
+    @apply rounded-lg p-2;
+  }
+}

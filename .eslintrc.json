@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "tailwindcss"],
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": ["**.test.tsx", "**.test.jsx", "**.test.ts", "**.test.js"],
+  "rules": {
+    "no-duplicate-imports": "error",
+    "no-unused-vars": "off", // already in TypeScript
+    "no-shadow": "off", // already in TypeScript
+    "prefer-const": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react-hooks/exhaustive-deps": "warn",
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/self-closing-comp": ["error", { "component": true, "html": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/consistent-type-imports": "warn"
+  }
 }
