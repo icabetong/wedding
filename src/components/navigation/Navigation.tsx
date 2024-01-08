@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <header className='border-b'>
       <nav className='container flex items-center justify-between p-4'>
-        <h1 className='text-xl font-bold uppercase'>Primaestra</h1>
+        <h1 className='text-xl font-bold uppercase font-brand'>Primaestra</h1>
         <div className='hidden md:flex items-center gap-2 shrink-0'>
           {links.map((e) => (
             <Item key={e.key} href={e.key} label={e.data} />

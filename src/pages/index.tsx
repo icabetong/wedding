@@ -11,7 +11,21 @@ export default function Home() {
   return (
     <Page title='Wedding'>
       <Content className='min-h-screen'>
-        <section className='flex md:flex-row flex-col-reverse items-center justify-center gap-8 py-16 md:py-32'>
+        <section className='relative flex md:flex-row flex-col-reverse items-center justify-center gap-8 py-16 md:py-32'>
+          <Image
+            src='/images/ornament.png'
+            width='512'
+            height='256'
+            alt='ornament-top'
+            className='absolute -top-8 mx-auto inset-x-0 -z-10 filter-hero'
+          />
+          <Image
+            src='/images/flower.png'
+            width='512'
+            height='256'
+            alt='flower ornament'
+            className='absolute -bottom-4 left-0 -z-10 filter-hero'
+          />
           <div className='flex-1 text-center md:text-left'>
             <h2 className='text-3xl md:text-4xl font-bold leading-tight'>
               Elegance <span className='text-accent-600'>Redefined</span>:
@@ -50,12 +64,19 @@ export default function Home() {
             </div>
           </div>
           <div className='flex-1 flex items-center justify-center'>
-            <Image
+            <motion.img
               src='/images/hero.jpg'
               width='512'
               height='512'
               alt='hero image, groom and bride'
               className='rounded-lg shadow'
+              initial={{ rotate: 0 }}
+              animate={{ rotate: 16, transition: { duration: 0.8 } }}
+              transition={{
+                type: 'spring',
+                stiffness: 260,
+                damping: 20,
+              }}
             />
           </div>
         </section>

@@ -87,6 +87,7 @@ const config: Config = {
       fontFamily: {
         heading: 'Lexend',
         body: 'Lexend',
+        brand: ['Danube'],
       },
       fontWeight: {
         normal: '400',

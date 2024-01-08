@@ -1,0 +1,18 @@
+/* danube latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Danube';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/danube/danube-regular.ttf') /* Modern Browsers */
+    format('truetype');
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Danube';
+  font-style: bold;
+  font-weight: 700;
+  src: url('/fonts/danube/danube-bold.ttf') /* Modern Browsers */
+    format('truetype');
+}
