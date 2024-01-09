@@ -6,11 +6,17 @@
   .container {
     @apply mx-auto max-w-screen-xl;
   }
+  .page-title {
+    @apply font-heading text-2xl font-bold md:text-3xl;
+  }
   .button-primary {
-    @apply rounded-lg bg-primary-600 px-4 py-2 font-medium text-text-900;
+    @apply rounded-lg bg-primary-600 px-4 py-2 font-medium text-text-900 outline-none focus:ring-2 focus:ring-secondary-300;
   }
   .button-secondary {
-    @apply rounded-lg bg-secondary-100 px-4 py-2 font-medium text-text-800;
+    @apply rounded-lg bg-secondary-200 px-4 py-2 font-medium text-text-800 outline-none focus:ring-2 focus:ring-secondary-300;
+  }
+  .button-accent {
+    @apply rounded-lg bg-accent-600 px-4 py-2 font-medium text-accent-50 outline-none transition-colors duration-150 ease-in-out hover:bg-accent-700 focus:ring-2 focus:ring-accent-300 disabled:cursor-not-allowed disabled:bg-accent-200;
   }
   .button-ghost {
     @apply rounded-lg p-2;

@@ -14,7 +14,7 @@ export default function Content({ children, className }: ContentProps) {
   return (
     <>
       <Navigation />
-      <main className={twMerge('container px-4 py-4', className)}>
+      <main className={twMerge('container px-4 py-4 min-h-screen', className)}>
         {children}
       </main>
       <Footer />

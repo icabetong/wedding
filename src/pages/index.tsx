@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { ArrowRightIcon } from '@heroicons/react/20/solid'
 import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
@@ -8,6 +9,11 @@ import Page from '@/components/page'
 
 //https://unsplash.com/photos/woman-holding-beige-petaled-flower-bouquet-30UOqDM5QW0
 export default function Home() {
+  const router = useRouter()
+
+  const handleToServices = () => router.push('/services')
+  const handleToAbout = () => router.push('/about')
+
   return (
     <Page title='Wedding'>
       <Content className='min-h-screen'>
@@ -27,11 +33,11 @@ export default function Home() {
             className='absolute -bottom-4 left-0 -z-10 filter-hero'
           />
           <div className='flex-1 text-center md:text-left'>
-            <h2 className='text-3xl md:text-4xl font-bold leading-tight'>
+            <h2 className='text-3xl md:text-4xl font-bold font-heading leading-tight'>
               Elegance <span className='text-accent-600'>Redefined</span>:
               Crafting Your Unforgettable Day
             </h2>
-            <p className='text-md text-text-600 mt-4 '>
+            <p className='text-md text-text-600 mt-4 font-medium'>
               At Primaestra, we specialize in turning your wedding dreams into a
               flawless reality. Our dedicated team ensures every detail is
               perfect, creating a day that reflects the uniqueness of your love
@@ -46,6 +52,7 @@ export default function Home() {
                   transition: { duration: 0.3 },
                 }}
                 whileTap={{ scale: 0.9 }}
+                onClick={handleToAbout}
               >
                 Learn more
               </motion.button>
@@ -57,6 +64,7 @@ export default function Home() {
                   transition: { duration: 0.3 },
                 }}
                 whileTap={{ scale: 0.9 }}
+                onClick={handleToServices}
               >
                 <span>Get Started</span>
                 <ArrowRightIcon className='h-5 w-5 ml-2 inline-block' />
@@ -71,7 +79,11 @@ export default function Home() {
               alt='hero image, groom and bride'
               className='rounded-lg shadow'
               initial={{ rotate: 0 }}
-              animate={{ rotate: 16, transition: { duration: 0.8 } }}
+              animate={{
+                rotate: 16,
+                transition: { duration: 0.8, delay: 0.5 },
+                origin: 'bottom left',
+              }}
               transition={{
                 type: 'spring',
                 stiffness: 260,
