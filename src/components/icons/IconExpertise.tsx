@@ -8,7 +8,7 @@ export default function ExpertIcon() {
       viewBox='0 0 112 114'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='[h-[5rem]'
+      className='h-[5rem]'
     >
       <rect width='58' height='58' rx='5' fill='#f8fcf8' />
       <rect

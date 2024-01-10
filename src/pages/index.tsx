@@ -5,9 +5,9 @@ import { IconChevronRight } from '@tabler/icons-react'
 import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import Content from '@/components/content/Content'
-import IconSupport from '@/components/icons/IconSupport'
 import Page from '@/components/page'
 import { hoverAnimation } from '@/shared/const/animations'
+import reasons from '@/shared/const/hero'
 
 // https://unsplash.com/photos/woman-holding-beige-petaled-flower-bouquet-30UOqDM5QW0
 export default function Home() {
@@ -88,9 +88,34 @@ export default function Home() {
             />
           </div>
         </section>
-        <section>
+        <section className='text-center pb-16'>
           <h2 className='section-title'>Why choose Primaestra?</h2>
-          <IconSupport />
+          <ul className='grid grid-cols-1 md:grid-cols-3 gap-4 my-8'>
+            {reasons.map((r) => (
+              <li
+                key={r.key}
+                className='bg-secondary-50 rounded-xl px-4 py-8 group'
+              >
+                <div className='w-fit mx-auto mb-4'>
+                  {React.createElement(r.icon, { className: 'w-12 h-12' })}
+                </div>
+                <div className='relative w-fit mx-auto mb-6'>
+                  <dt className='font-bold font-heading'>{r.title}</dt>
+                  <div className='absolute -bottom-2 h-1/3 inset-x-0 bg-accent-500/50 group-hover:h-2/3 transition-all ease-in-out duration-150' />
+                </div>
+                <dd>{r.description}</dd>
+              </li>
+            ))}
+          </ul>
+          <motion.button
+            type='button'
+            className={twMerge('button-primary', 'py-4 px-5 mx-auto w-fit')}
+            whileHover={hoverAnimation}
+            whileTap={{ scale: 0.9 }}
+            onClick={handleToServices}
+          >
+            Learn more...
+          </motion.button>
         </section>
       </Content>
     </Page>

@@ -16,6 +16,7 @@ declare global {
   type CardData = {
     key: string
     title: string
+    description?: string
     icon: (props: TablerIconsProps) => JSX.Element
   }
 }
