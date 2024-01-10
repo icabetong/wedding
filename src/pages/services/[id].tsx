@@ -18,35 +18,37 @@ export default function ServicePage({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <Page title='Service'>
-      <Content>
+      <Content className='my-8'>
         <section>
           <h1 className='page-title'>{product.title}</h1>
-          <p className='mt-2 text-sm font-medium'>{product.summary}</p>
-          <div className='mt-8 flex items-center justify-between gap-4'>
-            <motion.ul
-              initial='hidden'
-              animate='visible'
-              variants={listVariants}
-              className='space-y-2'
-            >
-              {product.features.map((e, i) => (
-                <motion.li
-                  key={i}
-                  variants={listItemAnimation}
-                  className='flex gap-2'
-                >
-                  <IconCheck className='h-6 w-6 shrink-0 text-accent-600' />
-                  <span className='font-medium'>{e}</span>
-                </motion.li>
-              ))}
-            </motion.ul>
-            <div>
+          <p className='mt-2 font-medium'>{product.summary}</p>
+          <div className='mt-8 flex flex-col-reverse lg:flex-row items-center gap-8'>
+            <div className='flex-1'>
+              <motion.ul
+                initial='hidden'
+                animate='visible'
+                variants={listVariants}
+                className='space-y-2'
+              >
+                {product.features.map((e, i) => (
+                  <motion.li
+                    key={i}
+                    variants={listItemAnimation}
+                    className='flex gap-2'
+                  >
+                    <IconCheck className='h-6 w-6 shrink-0 text-accent-600' />
+                    <span className='font-medium'>{e}</span>
+                  </motion.li>
+                ))}
+              </motion.ul>
+            </div>
+            <div className='text-center flex-1'>
               <Image
                 src='/images/service.jpg'
                 height='512'
                 width='512'
                 alt='service'
-                className='w-96 h-96 object-cover rounded-xl shadow'
+                className='w-96 h-96 inline-block object-cover rounded-xl shadow'
               />
             </div>
           </div>

@@ -32,8 +32,8 @@ export default function Navigation() {
               leaveFrom='opacity-100 translate-y-0'
               leaveTo='opacity-0 translate-y-1'
             >
-              <Popover.Panel className='absolute right-0 z-10 w-screen max-w-xs'>
-                <div className='bg-background-50/60  border border-background-100 rounded-lg'>
+              <Popover.Panel className='absolute right-0 z-20 w-screen max-w-xs mt-4'>
+                <div className='bg-background-50 border border-background-100 rounded-lg shadow'>
                   <ul className='flex items-center flex-col'>
                     {links.map((e) => (
                       <Item key={e.key} href={e.key} label={e.data} />

@@ -18,4 +18,4 @@ export const listItemAnimation = {
   },
 }
 
-export const hoverAnimation = { y: 2.8, transition: { duration: 0.3 } }
+export const hoverAnimation = { y: -2.8, transition: { duration: 0.3 } }

@@ -8,21 +8,19 @@ import { services } from '@/shared/const/services'
 export default function ServicesPage() {
   return (
     <Page title='Services | Primaestra'>
-      <Content>
-        <section>
-          <div className='relative overflow-clip rounded-xl'>
+      <Content className='my-8'>
+        <section className='flex gap-16'>
+          <div className='relative flex-grow-1 hidden lg:block'>
             <Image
               src='/images/banner-services.jpg'
               width='1920'
               height='1281'
               alt='wedding venue'
-              className='object-cover h-36'
+              className='object-cover object-center w-96 h-full rounded-xl'
             />
-            <h1 className='page-title absolute bottom-0 inset-x-0 p-4 backdrop-blur bg-gray-50/70 text-accent-600'>
-              Services
-            </h1>
           </div>
-          <div className='mt-8'>
+          <div className='flex-1 w-2/3'>
+            <h1 className='page-title mb-4'>Services</h1>
             <ProductCards products={services} />
           </div>
         </section>

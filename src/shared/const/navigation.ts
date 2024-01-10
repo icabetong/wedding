@@ -4,8 +4,8 @@ const links: DataPair<string>[] = [
     data: 'Services',
   },
   {
-    key: '/contact',
-    data: 'Contact',
+    key: '/partners',
+    data: 'Partners',
   },
   {
     key: '/about',

@@ -15,7 +15,7 @@ export default function Item({ data }: ItemProps) {
       <div className='w-fit rounded-full bg-secondary-200 p-2'>
         {React.createElement(data.icon, { className: 'h-10 w-10' })}
       </div>
-      <dt className='font-medium text-sm'>{data.title}</dt>
+      <dt className='font-medium'>{data.title}</dt>
     </motion.li>
   )
 }

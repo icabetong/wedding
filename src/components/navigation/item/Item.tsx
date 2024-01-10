@@ -16,7 +16,7 @@ export default function Item({ href, label, className }: ItemProps) {
     <Link
       href={href}
       className={twMerge(
-        'hover:bg-secondary-100 rounded-lg px-4 py-2 transition-colors duration-150 font-medium font-heading',
+        'hover:bg-secondary-100 rounded-lg px-4 py-2 transition-colors duration-150 font-bold font-heading',
         className
       )}
     >
