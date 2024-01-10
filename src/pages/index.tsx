@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { ArrowRightIcon } from '@heroicons/react/20/solid'
+import { IconChevronRight } from '@tabler/icons-react'
 import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import Content from '@/components/content/Content'
@@ -67,7 +67,7 @@ export default function Home() {
                 onClick={handleToServices}
               >
                 <span>Get Started</span>
-                <ArrowRightIcon className='h-5 w-5 ml-2 inline-block' />
+                <IconChevronRight className='h-5 w-5 ml-2 inline-block' />
               </motion.button>
             </div>
           </div>

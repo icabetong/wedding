@@ -1,4 +1,18 @@
-const services: ProductData[] = [
+import {
+  Icon24Hours,
+  IconArmchair,
+  IconCalendarTime,
+  IconCashBanknote,
+  IconPaperBag,
+  IconPresentation,
+  IconScissors,
+  IconShieldLock,
+  IconSpeakerphone,
+  IconTruckDelivery,
+  IconTruckLoading,
+} from '@tabler/icons-react'
+
+export const services: ProductData[] = [
   {
     key: 'coordination',
     title: 'Coordination Service',
@@ -68,4 +82,61 @@ const services: ProductData[] = [
   },
 ]
 
-export default services
+export const responsibilities: CardData[] = [
+  {
+    key: 'support',
+    title: 'Comprehensive support for the couple',
+    icon: Icon24Hours,
+  },
+  {
+    key: 'timeline',
+    title: 'Adherence to the finalized timeline',
+    icon: IconCalendarTime,
+  },
+  {
+    key: 'essentials',
+    title: 'Ready emergency wedding kit with essentials',
+    icon: IconScissors,
+  },
+  {
+    key: 'central',
+    title:
+      'Central point of contact for suppliers and guests for a stress-free day',
+    icon: IconSpeakerphone,
+  },
+  {
+    key: 'suppliers',
+    title: 'Coordination with suppliers for setup and timely deliveries',
+    icon: IconTruckDelivery,
+  },
+  {
+    key: 'guest',
+    title: 'Managing guest reception and table seating',
+    icon: IconArmchair,
+  },
+  {
+    key: 'briefing',
+    title: 'Briefing all wedding participants on their roles',
+    icon: IconPresentation,
+  },
+  {
+    key: 'delivery',
+    title: 'Ensuring completeness and timely delivery of ceremonial items',
+    icon: IconTruckLoading,
+  },
+  {
+    key: 'safeguard',
+    title: 'Safeguarding ceremonial items for turnover after the reception',
+    icon: IconShieldLock,
+  },
+  {
+    key: 'meals',
+    title: 'Distributing crew meals and floral arrangements',
+    icon: IconPaperBag,
+  },
+  {
+    key: 'payment',
+    title: 'Handling payment balances for all suppliers',
+    icon: IconCashBanknote,
+  },
+]

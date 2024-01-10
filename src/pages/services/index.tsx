@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Content from '@/components/content/Content'
 import Page from '@/components/page'
 import ProductCards from '@/components/product-cards'
-import services from '@/shared/const/services'
+import { services } from '@/shared/const/services'
 
 export default function ServicesPage() {
   return (

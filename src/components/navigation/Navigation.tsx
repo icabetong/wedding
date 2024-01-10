@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon } from '@heroicons/react/20/solid'
+import { IconMenu } from '@tabler/icons-react'
 import links from '@/shared/const/navigation'
 import Item from './item'
 
@@ -21,7 +21,7 @@ export default function Navigation() {
           <Popover className='relative'>
             <Popover.Button className='button-ghost'>
               <span className='sr-only'>Links</span>
-              <Bars3Icon className='h-5 w-5' />
+              <IconMenu className='h-5 w-5' />
             </Popover.Button>
             <Transition
               as={Fragment}
