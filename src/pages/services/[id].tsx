@@ -1,11 +1,13 @@
 import React from 'react'
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
+import { type GetServerSideProps, type InferGetServerSidePropsType } from 'next'
 import Image from 'next/image'
 import { IconCheck } from '@tabler/icons-react'
+import { motion } from 'framer-motion'
 import Content from '@/components/content/Content'
 import Page from '@/components/page'
 import Responsibilities from '@/components/responsibilites'
-import { responsibilities, services } from '@/shared/const/services'
+import { listItemAnimation, listVariants } from '@/shared/const/animations'
+import { services } from '@/shared/const/services'
 
 type ServicePageData = {
   product: ProductData
@@ -19,16 +21,25 @@ export default function ServicePage({
       <Content>
         <section>
           <h1 className='page-title'>{product.title}</h1>
-          <p className='mt-2'>{product.summary}</p>
+          <p className='mt-2 text-sm font-medium'>{product.summary}</p>
           <div className='mt-8 flex items-center justify-between gap-4'>
-            <ul className='space-y-2'>
+            <motion.ul
+              initial='hidden'
+              animate='visible'
+              variants={listVariants}
+              className='space-y-2'
+            >
               {product.features.map((e, i) => (
-                <li key={i} className='flex gap-2'>
+                <motion.li
+                  key={i}
+                  variants={listItemAnimation}
+                  className='flex gap-2'
+                >
                   <IconCheck className='h-6 w-6 shrink-0 text-accent-600' />
                   <span className='font-medium'>{e}</span>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
             <div>
               <Image
                 src='/images/service.jpg'

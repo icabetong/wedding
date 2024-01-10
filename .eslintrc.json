@@ -23,6 +23,7 @@
     "react/jsx-props-no-spreading": "off",
     "react/self-closing-comp": ["error", { "component": true, "html": true }],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/no-array-index-key": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/consistent-type-imports": "warn"
   }

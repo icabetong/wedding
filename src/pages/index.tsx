@@ -6,8 +6,9 @@ import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import Content from '@/components/content/Content'
 import Page from '@/components/page'
+import { hoverAnimation } from '@/shared/const/animations'
 
-//https://unsplash.com/photos/woman-holding-beige-petaled-flower-bouquet-30UOqDM5QW0
+// https://unsplash.com/photos/woman-holding-beige-petaled-flower-bouquet-30UOqDM5QW0
 export default function Home() {
   const router = useRouter()
 
@@ -47,10 +48,7 @@ export default function Home() {
               <motion.button
                 type='button'
                 className={twMerge('button-secondary', 'py-4 px-5')}
-                whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0.3 },
-                }}
+                whileHover={hoverAnimation}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleToAbout}
               >
@@ -59,10 +57,7 @@ export default function Home() {
               <motion.button
                 type='button'
                 className={twMerge('button-primary', 'py-4 px-5')}
-                whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0.3 },
-                }}
+                whileHover={hoverAnimation}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleToServices}
               >
@@ -80,7 +75,7 @@ export default function Home() {
               className='rounded-lg shadow'
               initial={{ rotate: 0 }}
               animate={{
-                rotate: 16,
+                rotate: 8,
                 transition: { duration: 0.8, delay: 0.5 },
                 origin: 'bottom left',
               }}

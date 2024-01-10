@@ -18,7 +18,7 @@ export default function ServicesPage() {
               alt='wedding venue'
               className='object-cover h-36'
             />
-            <h1 className='page-title absolute bottom-0 inset-x-0 p-4 backdrop-blur bg-gray-50/70'>
+            <h1 className='page-title absolute bottom-0 inset-x-0 p-4 backdrop-blur bg-gray-50/70 text-accent-600'>
               Services
             </h1>
           </div>
