@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import { IconMenu } from '@tabler/icons-react'
@@ -8,10 +9,19 @@ import Item from './item'
 export default function Navigation() {
   return (
     <header className='border-b'>
-      <nav className='container flex items-center justify-between p-4'>
-        <Link href='/' className='text-xl font-bold uppercase font-brand'>
-          Primaestra
-        </Link>
+      <nav className='container flex items-center justify-between py-4 px-8'>
+        <div className='flex items-center gap-2'>
+          <Image
+            src='/images/logo.png'
+            width='128'
+            height='128'
+            alt='logo'
+            className='h-8 w-8'
+          />
+          <Link href='/' className='text-xl font-bold uppercase font-brand'>
+            Primaestra
+          </Link>
+        </div>
         <div className='hidden md:flex items-center gap-2 shrink-0'>
           {links.map((e) => (
             <Item key={e.key} href={e.key} label={e.data} />

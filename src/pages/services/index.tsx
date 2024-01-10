@@ -9,7 +9,7 @@ export default function ServicesPage() {
   return (
     <Page title='Services | Primaestra'>
       <Content className='my-8'>
-        <section className='flex gap-16'>
+        <section className='flex gap-16 px-8'>
           <div className='relative flex-grow-1 hidden lg:block'>
             <Image
               src='/images/banner-services.jpg'

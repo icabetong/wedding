@@ -19,7 +19,7 @@ export default function ServicePage({
   return (
     <Page title='Service'>
       <Content className='my-8'>
-        <section>
+        <section className='px-8'>
           <h1 className='page-title'>{product.title}</h1>
           <p className='mt-2 font-medium'>{product.summary}</p>
           <div className='mt-8 flex flex-col-reverse lg:flex-row items-center gap-8'>

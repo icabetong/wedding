@@ -5,6 +5,7 @@ import { IconChevronRight } from '@tabler/icons-react'
 import { motion } from 'framer-motion'
 import { twMerge } from 'tailwind-merge'
 import Content from '@/components/content/Content'
+import IconSupport from '@/components/icons/IconSupport'
 import Page from '@/components/page'
 import { hoverAnimation } from '@/shared/const/animations'
 
@@ -17,8 +18,8 @@ export default function Home() {
 
   return (
     <Page title='Wedding'>
-      <Content className='min-h-screen'>
-        <section className='relative flex md:flex-row flex-col-reverse items-center justify-center gap-8 py-16 md:py-32'>
+      <Content className='min-h-screen px-8'>
+        <section className='relative flex md:flex-row flex-col-reverse items-center justify-center gap-8 py-16 md:py-32 mb-16'>
           <Image
             src='/images/ornament.png'
             width='512'
@@ -86,6 +87,10 @@ export default function Home() {
               }}
             />
           </div>
+        </section>
+        <section>
+          <h2 className='section-title'>Why choose Primaestra?</h2>
+          <IconSupport />
         </section>
       </Content>
     </Page>
