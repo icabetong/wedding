@@ -48,7 +48,7 @@ export default function Home() {
             <div className='mt-8 space-x-4'>
               <motion.button
                 type='button'
-                className={twMerge('button-secondary', 'py-4 px-5')}
+                className={twMerge('button-primary', 'py-4 px-5')}
                 whileHover={hoverAnimation}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleToAbout}
@@ -57,7 +57,7 @@ export default function Home() {
               </motion.button>
               <motion.button
                 type='button'
-                className={twMerge('button-primary', 'py-4 px-5')}
+                className={twMerge('button-accent', 'py-4 px-5')}
                 whileHover={hoverAnimation}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleToServices}
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           <div className='flex-1 flex items-center justify-center'>
             <motion.img
-              src='/images/hero.jpg'
+              src='/images/hero.webp'
               width='512'
               height='512'
               alt='hero image, groom and bride'

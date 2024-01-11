@@ -17,7 +17,7 @@ export default function ServicePage({
   product,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
-    <Page title='Service'>
+    <Page title={`${product.title} | Primaestra`}>
       <Content className='my-8'>
         <section className='px-8'>
           <h1 className='page-title'>{product.title}</h1>
@@ -44,7 +44,7 @@ export default function ServicePage({
             </div>
             <div className='text-center flex-1'>
               <Image
-                src='/images/service.jpg'
+                src='/images/service.webp'
                 height='512'
                 width='512'
                 alt='service'

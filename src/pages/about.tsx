@@ -10,7 +10,7 @@ export default function AboutPage() {
       <Content className='my-8'>
         <section className='text-center'>
           <Image
-            src='/images/hero.jpg'
+            src='/images/hero.webp'
             width='512'
             height='256'
             alt='wedding'

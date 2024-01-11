@@ -12,7 +12,7 @@ export default function ServicesPage() {
         <section className='flex gap-16 px-8'>
           <div className='relative flex-grow-1 hidden lg:block'>
             <Image
-              src='/images/banner-services.jpg'
+              src='/images/banner-services.webp'
               width='1920'
               height='1281'
               alt='wedding venue'
