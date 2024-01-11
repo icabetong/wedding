@@ -13,6 +13,11 @@ declare global {
     highlight?: boolean
     features: string[]
   }
+  type SupplierGroup = {
+    key: string
+    label: string
+    suppliers: DataPair<string>[]
+  }
   type CardData = {
     key: string
     title: string

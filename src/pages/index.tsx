@@ -17,7 +17,7 @@ export default function Home() {
   const handleToAbout = () => router.push('/about')
 
   return (
-    <Page title='Wedding'>
+    <Page title='Primaestra'>
       <Content className='min-h-screen px-8'>
         <section className='relative flex md:flex-row flex-col-reverse items-center justify-center gap-8 py-16 md:py-32 mb-16'>
           <Image
