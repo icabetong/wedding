@@ -20,7 +20,7 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-          <p>Manila, Philippines</p>
+          <p>Cavite, Philippines</p>
 
           <p className='text-white/50 mt-8'>
             Copyright 2024, Primaestra. All Rights Reserved

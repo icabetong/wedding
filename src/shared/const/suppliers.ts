@@ -55,11 +55,11 @@ const suppliers: SupplierGroup[] = [
         data: 'https://www.facebook.com/joanquizonmakeup',
       },
       {
-        key: 'Makeup BY Dan Kevin',
+        key: 'Makeup by Dan Kevin',
         data: 'https://www.facebook.com/makeupbydankevin',
       },
       {
-        key: 'Makeup BY Krystle Bonus',
+        key: 'Makeup by Krystle Bonus',
         data: 'https://www.facebook.com/KrystleBonusMakeupArtistry',
       },
     ],
