@@ -51,8 +51,8 @@ export default function Navigation() {
             <IconMenu className='h-5 w-5' />
             <span className='sr-only'>Open Sidebar</span>
           </button>
-          <Sidebar className='md:hidden' open={open}>
-            <div>
+          <Sidebar className='md:hidden text-center' open={open}>
+            <div className='text-left'>
               <button
                 type='button'
                 className='button-ghost'
@@ -69,12 +69,23 @@ export default function Navigation() {
                   className='w-full'
                   whileHover={{ y: -4 }}
                 >
-                  <Link className='block py-2' href={e.key}>
+                  <Link className='block py-2 font-medium' href={e.key}>
                     {e.data}
                   </Link>
                 </motion.li>
               ))}
             </ul>
+            <button
+              type='button'
+              className='navigation-link p-2 inline-block mx-auto'
+              onClick={handleThemeChange}
+            >
+              {theme === 'dark' ? (
+                <IconSun className='h-5 w-5' />
+              ) : (
+                <IconMoon className='h-5 w-5' />
+              )}
+            </button>
           </Sidebar>
         </div>
       </nav>

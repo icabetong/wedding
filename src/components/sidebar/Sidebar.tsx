@@ -14,7 +14,7 @@ export default function Sidebar({ open, className, children }: SidebarProps) {
   return (
     <div
       className={twMerge(
-        'fixed right-0 top-0 z-40 h-full w-[35vw] overflow-x-hidden overflow-y-scroll border dark:border-background-secondary-dark dark:text-text-dark bg-background-secondary dark:bg-background-secondary-dark text-gray-800 shadow duration-300 ease-in-out',
+        'fixed right-0 top-0 z-40 h-full w-3/5 overflow-x-hidden overflow-y-scroll border border-background-secondary dark:border-background-secondary-dark dark:text-text-dark bg-background-secondary dark:bg-background-secondary-dark text-gray-800 shadow duration-300 ease-in-out',
         className,
         open ? 'translate-x-0' : 'translate-x-full'
       )}
