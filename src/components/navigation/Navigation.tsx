@@ -33,7 +33,7 @@ export default function Navigation() {
           ))}
           <button
             type='button'
-            className='button-ghost p-2'
+            className='navigation-link p-2'
             onClick={handleThemeChange}
           >
             {theme ? (

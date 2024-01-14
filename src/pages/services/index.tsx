@@ -8,7 +8,7 @@ import { services } from '@/shared/const/services'
 export default function ServicesPage() {
   return (
     <Page title='Services | Primaestra'>
-      <Content className='my-8'>
+      <Content className='my-8 relative'>
         <section className='flex gap-16 px-8'>
           <div className='relative flex-grow-1 hidden lg:block'>
             <Image
@@ -24,6 +24,13 @@ export default function ServicesPage() {
             <ProductCards products={services} />
           </div>
         </section>
+        <Image
+          src='/images/ornament.png'
+          width='512'
+          height='256'
+          alt='ornament'
+          className='absolute bottom-0 inset-x-0 filter-hero dark:filter-hero-dark inline-block mx-auto'
+        />
       </Content>
     </Page>
   )

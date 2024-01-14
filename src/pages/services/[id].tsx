@@ -21,9 +21,18 @@ export default function ServicePage({
       <Content className='my-8'>
         <section className='px-8'>
           <h1 className='page-title'>{product.title}</h1>
-          <p className='mt-2 font-medium text-text'>{product.summary}</p>
+          <p className='mt-2 font-medium text-text dark:text-primary'>
+            {product.summary}
+          </p>
           <div className='mt-8 flex flex-col-reverse lg:flex-row items-center gap-8'>
-            <div className='flex-1'>
+            <div className='flex-1 relative'>
+              <Image
+                src='/images/flower.png'
+                width='512'
+                height='256'
+                alt='flower ornament'
+                className='absolute -bottom-4 left-0 -z-10 filter-hero dark:filter-hero-dark'
+              />
               <motion.ul
                 initial='hidden'
                 animate='visible'

@@ -35,4 +35,7 @@
     filter: invert(7%) sepia(8%) saturate(4103%) hue-rotate(359deg)
       brightness(97%) contrast(89%);
   }
+  .navigation-link {
+    @apply hover:bg-background-secondary dark:hover:bg-background-secondary-dark rounded-lg px-4 py-2 font-heading font-bold transition-colors duration-150;
+  }
 }
