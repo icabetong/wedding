@@ -7,7 +7,21 @@ import Page from '@/components/page'
 export default function AboutPage() {
   return (
     <Page title='About | Primaestra'>
-      <Content className='my-8'>
+      <Content className='my-8 relative'>
+        <Image
+          src='/images/flower.png'
+          width='512'
+          height='256'
+          alt='flower ornament'
+          className='hidden md:block absolute bottom-2 left-0 -z-10 filter-hero dark:filter-hero-dark'
+        />
+        <Image
+          src='/images/flower.png'
+          width='512'
+          height='256'
+          alt='flower ornament'
+          className='hidden md:block absolute bottom-2 right-0 -z-10 filter-hero dark:filter-hero-dark transform -scale-x-[1]'
+        />
         <section className='text-center'>
           <Image
             src='/images/hero.webp'

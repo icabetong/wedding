@@ -4,12 +4,12 @@ const links: DataPair<string>[] = [
     data: 'Services',
   },
   {
-    key: '/partners',
-    data: 'Partners',
+    key: '/suppliers',
+    data: 'Suppliers',
   },
   {
     key: '/about',
-    data: 'About',
+    data: 'About Us',
   },
 ]
 export default links

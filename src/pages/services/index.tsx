@@ -29,7 +29,7 @@ export default function ServicesPage() {
           width='512'
           height='256'
           alt='ornament'
-          className='absolute bottom-0 inset-x-0 filter-hero dark:filter-hero-dark inline-block mx-auto'
+          className='hidden absolute bottom-0 inset-x-0 filter-hero dark:filter-hero-dark md:inline-block mx-auto'
         />
       </Content>
     </Page>

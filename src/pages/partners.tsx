@@ -49,10 +49,10 @@ const nameVariants = {
 
 export default function PartnersPage() {
   return (
-    <Page title='Partners | Primaestra'>
+    <Page title='Suppliers | Primaestra'>
       <Content className='my-8'>
         <section className='px-8'>
-          <h1 className='page-title'>Partners & Suppliers</h1>
+          <h1 className='page-title'>Suppliers</h1>
           <div className='my-8'>
             <motion.ul
               className='columns-1 md:columns-2 gap-4 space-y-2'
