@@ -34,7 +34,7 @@ export default function Document() {
         />
         <link rel='manifest' href='/site.webmanifest' />
       </Head>
-      <body className='relative font-body bg-background-50/50 text-text-800 accent-accent-500'>
+      <body className='relative font-body bg-background text-text dark:text-text-dark dark:bg-background-dark transition-colors duration-200'>
         <Main />
         <NextScript />
       </body>

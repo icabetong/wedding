@@ -2,13 +2,18 @@ import React, { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
-import { IconMenu } from '@tabler/icons-react'
+import { IconMenu, IconMoon, IconSun } from '@tabler/icons-react'
 import links from '@/shared/const/navigation'
+import useTheme from '@/shared/hooks/use-themes'
 import Item from './item'
 
 export default function Navigation() {
+  const { change, theme } = useTheme()
+
+  const handleThemeChange = () => change(theme === 'dark' ? 'light' : 'dark')
+
   return (
-    <header className='border-b'>
+    <header className='border-b border-background-secondary dark:border-background-secondary-dark'>
       <nav className='container flex items-center justify-between py-4 px-8'>
         <div className='flex items-center gap-2'>
           <Image
@@ -26,6 +31,17 @@ export default function Navigation() {
           {links.map((e) => (
             <Item key={e.key} href={e.key} label={e.data} />
           ))}
+          <button
+            type='button'
+            className='button-ghost p-2'
+            onClick={handleThemeChange}
+          >
+            {theme ? (
+              <IconSun className='h-5 w-5' />
+            ) : (
+              <IconMoon className='h-5 w-5' />
+            )}
+          </button>
         </div>
         <div className='md:hidden'>
           <Popover className='relative'>
@@ -43,7 +59,7 @@ export default function Navigation() {
               leaveTo='opacity-0 translate-y-1'
             >
               <Popover.Panel className='absolute right-0 z-20 w-screen max-w-xs mt-4'>
-                <div className='bg-background-50 border border-background-100 rounded-lg shadow'>
+                <div className='bg-background border border-background rounded-lg shadow'>
                   <ul className='flex items-center flex-col'>
                     {links.map((e) => (
                       <Item key={e.key} href={e.key} label={e.data} />

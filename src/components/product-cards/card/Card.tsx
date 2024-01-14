@@ -16,15 +16,15 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <motion.li
       variants={listItemAnimation}
-      className={`rounded-xl p-4 flex md:flex-row flex-col gap-4 lg:gap-8 text-left text-text-800 border-2 border-transparent hover:border-secondary-500 transition-all duration-150 ease-in-out ${
-        product.highlight ? 'bg-secondary-100' : 'bg-secondary-50'
+      className={`rounded-xl p-4 flex md:flex-row flex-col gap-4 lg:gap-8 text-left text-text-800 border-2 border-transparent hover:border-secondary dark:hover:border-secondary-dark transition-all duration-150 ease-in-out ${
+        product.highlight
+          ? 'bg-background-tertiary dark:bg-background-tertiary-dark'
+          : 'bg-background-secondary dark:bg-background-secondary-dark'
       }`}
     >
       <div className='space-y-2'>
         <dt className='text-xl font-bold font-heading'>{product.title}</dt>
-        <dd className='font-medium text-text-700 min-h-[100px]'>
-          {product.summary}
-        </dd>
+        <dd className='font-medium min-h-[100px]'>{product.summary}</dd>
       </div>
       <div className='shrink-0 flex items-center justify-end'>
         <motion.button

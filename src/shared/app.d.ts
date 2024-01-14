@@ -5,6 +5,7 @@ declare global {
     key: string
     data: T
   }
+  type Theme = 'dark' | 'light'
 
   type ProductData = {
     key: string

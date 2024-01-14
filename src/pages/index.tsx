@@ -25,21 +25,21 @@ export default function Home() {
             width='512'
             height='256'
             alt='ornament-top'
-            className='absolute -top-8 mx-auto inset-x-0 -z-10 filter-hero'
+            className='absolute -top-8 mx-auto inset-x-0 -z-10 filter-hero dark:filter-hero-dark'
           />
           <Image
             src='/images/flower.png'
             width='512'
             height='256'
             alt='flower ornament'
-            className='absolute -bottom-4 left-0 -z-10 filter-hero'
+            className='absolute -bottom-4 left-0 -z-10 filter-hero dark:filter-hero-dark'
           />
           <div className='flex-1 text-center md:text-left'>
             <h2 className='text-3xl md:text-4xl font-bold font-heading leading-tight'>
-              Elegance <span className='text-accent-600'>Redefined</span>:
-              Crafting Your Unforgettable Day
+              Elegance <span className='text-accent'>Redefined</span>: Crafting
+              Your Unforgettable Day
             </h2>
-            <p className='text-md text-text-600 mt-4 font-medium'>
+            <p className='text-md text-text dark:text-primary mt-4 font-medium'>
               At Primaestra, we specialize in turning your wedding dreams into a
               flawless reality. Our dedicated team ensures every detail is
               perfect, creating a day that reflects the uniqueness of your love
@@ -94,14 +94,14 @@ export default function Home() {
             {reasons.map((r) => (
               <li
                 key={r.key}
-                className='bg-secondary-50 rounded-xl px-4 py-8 group'
+                className='bg-background-secondary rounded-xl px-4 py-8 group dark:bg-background-secondary-dark'
               >
                 <div className='w-fit mx-auto mb-4'>
                   {React.createElement(r.icon, { className: 'w-12 h-12' })}
                 </div>
                 <div className='relative w-fit mx-auto mb-6'>
                   <dt className='font-bold font-heading'>{r.title}</dt>
-                  <div className='absolute -bottom-2 h-1/3 inset-x-0 bg-accent-500/50 group-hover:h-2/3 transition-all ease-in-out duration-150' />
+                  <div className='absolute -bottom-2 h-1/3 inset-x-0 bg-accent/50 group-hover:h-2/3 transition-all ease-in-out duration-150' />
                 </div>
                 <dd>{r.description}</dd>
               </li>

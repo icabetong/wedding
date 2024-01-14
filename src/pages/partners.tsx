@@ -38,7 +38,7 @@ const nameVariants = {
     },
   },
   hover: {
-    x: 8,
+    x: -8,
     transition: {
       duration: 0.2,
       type: 'tween',
@@ -64,7 +64,7 @@ export default function PartnersPage() {
                 <motion.li
                   key={e.key}
                   variants={listItemAnimation}
-                  className='bg-secondary-50 rounded-xl p-4 h-min'
+                  className='bg-background-secondary dark:bg-background-secondary-dark rounded-xl p-4 h-min'
                 >
                   <dt className='font-heading font-bold text-lg'>{e.label}</dt>
                   <ul>
@@ -81,14 +81,14 @@ export default function PartnersPage() {
                           rel='noopenner noreferrer'
                           className='text-link inline-flex items-center'
                         >
+                          <motion.span variants={nameVariants}>
+                            {s.key}
+                          </motion.span>
                           <motion.span
                             variants={linkVariants}
                             whileHover={{ scale: 1.1 }}
                           >
                             <IconBrandFacebook className='h-5 w-5' />
-                          </motion.span>
-                          <motion.span variants={nameVariants}>
-                            {s.key}
                           </motion.span>
                         </Link>
                       </motion.li>
