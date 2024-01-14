@@ -39,7 +39,7 @@ export default function Navigation() {
             className='navigation-link p-2'
             onClick={handleThemeChange}
           >
-            {theme ? (
+            {theme === 'dark' ? (
               <IconSun className='h-5 w-5' />
             ) : (
               <IconMoon className='h-5 w-5' />
