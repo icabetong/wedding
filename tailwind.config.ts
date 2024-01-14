@@ -22,8 +22,8 @@ const config: Config = {
         'primary-dark': '#5b503e',
         secondary: '#b3907a',
         'secondary-dark': '#85624c',
-        accent: '#ec8c0e',
-        'accent-dark': '#f19113',
+        accent: '#83907a',
+        'accent-dark': '#79856f',
       },
       fontSize: {
         sm: '0.750rem',

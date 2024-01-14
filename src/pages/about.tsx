@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className='page-title inline-flex gap-4 items-center'>
             <div>
               <div>Prima</div>
-              <p className='text-base italic text-text-600'>
+              <p className='text-base italic text-secondary'>
                 noun: leading, major
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function AboutPage() {
             </div>
             <div>
               <div>Maestra</div>
-              <p className='text-base italic text-text-600'>
+              <p className='text-base italic text-secondary'>
                 noun: expert, master
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
             <p>
               We are driven by customer satisfaction, knowing that&nbsp;
-              <span className='font-semibold text-accent'>
+              <span className='font-bold text-accent'>
                 AN EVENT&apos;S SUCCESS IS MEASURED SOLELY BY CLIENT&apos;S
                 HAPPINESS.
               </span>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               done right by you. From on-the-day to full coordination, we invest
               the same attention to detail, care and dedication to making each
               event a success. With this, we believe that&nbsp;
-              <span className='font-semibold text-accent'>
+              <span className='font-bold text-accent'>
                 THE QUALITY OF PROJECTS WILL ALWAYS BE MORE IMPORTANT THAT
                 QUANTITY.
               </span>
@@ -85,7 +85,7 @@ export default function AboutPage() {
               Lastly, we believe that planning should be fun! While we put
               premium in professionalism, we strive to make the journey fun,
               stress-free and memorable for you.&nbsp;
-              <span className='font-semibold text-accent'>
+              <span className='font-bold text-accent'>
                 BECAUSE WE, AT PRIMAESTRA, KNOW YOU DESERVE NOTHING LESS.
               </span>
             </p>

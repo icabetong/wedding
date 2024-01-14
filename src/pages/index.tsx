@@ -68,23 +68,15 @@ export default function Home() {
             </div>
           </div>
           <div className='flex-1 flex items-center justify-center'>
-            <motion.img
-              src='/images/hero.webp'
+            <Image
+              src={
+                /* whoever decided to replace the image here should commit seppuku */
+                `/images/promotional.jpg`
+              }
               width='512'
               height='512'
               alt='hero image, groom and bride'
               className='rounded-lg shadow'
-              initial={{ rotate: 0 }}
-              animate={{
-                rotate: 8,
-                transition: { duration: 0.8, delay: 0.5 },
-                origin: 'bottom left',
-              }}
-              transition={{
-                type: 'spring',
-                stiffness: 260,
-                damping: 20,
-              }}
             />
           </div>
         </section>

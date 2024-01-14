@@ -1,6 +1,10 @@
 import React from 'react'
+import useTheme from '@/shared/hooks/use-themes'
 
 export default function SupportIcon() {
+  const { theme } = useTheme()
+  const fillColor = theme === 'light' ? '#83907a' : '#79856f'
+
   return (
     <svg
       width='178'
@@ -15,7 +19,7 @@ export default function SupportIcon() {
         width='154'
         height='63'
         rx='5'
-        fill='#ec8c0e'
+        fill={fillColor}
         fillOpacity='0.6'
       />
       <path

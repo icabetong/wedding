@@ -1,6 +1,12 @@
 import React from 'react'
+import useTheme from '@/shared/hooks/use-themes'
 
 export default function ExpertIcon() {
+  const { theme } = useTheme()
+  const accent = theme === 'light' ? '#83907a' : '#79856f'
+  const secondary = theme === 'light' ? '#b3907a' : '#85624c'
+  const primary = theme === 'light' ? '#c1b6a4' : '#5b503e'
+
   return (
     <svg
       width='112'
@@ -17,7 +23,7 @@ export default function ExpertIcon() {
         width='33'
         height='33'
         rx='5'
-        fill='#ec8c0e'
+        fill={accent}
         fillOpacity='0.6'
       />
       <rect
@@ -26,10 +32,10 @@ export default function ExpertIcon() {
         width='43'
         height='43'
         rx='5'
-        fill='#070e09'
+        fill={secondary}
         fillOpacity='0.1'
       />
-      <rect x='20' y='70' width='38' height='39' rx='5' fill='var(--text)' />
+      <rect x='20' y='70' width='38' height='39' rx='5' fill={primary} />
     </svg>
   )
 }
