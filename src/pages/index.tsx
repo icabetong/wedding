@@ -74,6 +74,7 @@ export default function Home() {
             <Image
               src={
                 /* whoever decided to replace the image here should commit seppuku */
+                /* to whoever decided it: "art thou stupid?, you ruined the design *facepalm*" */
                 `/images/promotional.jpg`
               }
               width='512'
