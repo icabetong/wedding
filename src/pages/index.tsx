@@ -34,7 +34,7 @@ export default function Home() {
             alt='flower ornament'
             className='absolute -bottom-4 left-0 -z-10 filter-hero dark:filter-hero-dark'
           />
-          <div className='text-center md:text-left w-1/3'>
+          <div className='flex-1 text-center md:text-left'>
             <h2 className='text-3xl md:text-4xl font-bold font-heading leading-tight'>
               Elegance{' '}
               <span className='text-accent dark:text-accent-dark'>
@@ -70,17 +70,16 @@ export default function Home() {
               </motion.button>
             </div>
           </div>
-          <div className='flex items-center justify-center w-2/3'>
+          <div className='flex-1 flex items-center justify-center'>
             <Image
               src={
                 /* whoever decided to replace the image here should commit seppuku */
-                /* to whoever decided it: "art thou stupid?, you ruined the design *facepalm*" */
                 `/images/promotional.jpg`
               }
               width='512'
               height='512'
               alt='hero image, groom and bride'
-              className='rounded-lg shadow h-[32rem] w-auto'
+              className='rounded-lg shadow'
             />
           </div>
         </section>
