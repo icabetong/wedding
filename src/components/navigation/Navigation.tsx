@@ -24,7 +24,7 @@ export default function Navigation() {
             width='128'
             height='128'
             alt='logo'
-            className='h-8 w-8'
+            className='h-14 w-14'
           />
           <Link href='/' className='text-xl font-bold uppercase font-brand'>
             Primaestra

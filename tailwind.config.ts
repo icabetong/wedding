@@ -23,7 +23,7 @@ const config: Config = {
         secondary: '#b3907a',
         'secondary-dark': '#85624c',
         accent: '#83907a',
-        'accent-dark': '#79856f',
+        'accent-dark': '#b3907a',
       },
       fontSize: {
         sm: '0.750rem',

@@ -11,7 +11,7 @@ const reasons: CardData[] = [
   },
   {
     key: 'support',
-    title: 'Flexible Support to Suit Your Needs',
+    title: 'Flexible Support',
     description: 'Tailored assistance to match your wedding style.',
     icon: IconSupport,
   },

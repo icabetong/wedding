@@ -9,7 +9,7 @@ export default function ServicesPage() {
   return (
     <Page title='Services | Primaestra'>
       <Content className='my-8 relative'>
-        <section className='flex gap-16 px-8'>
+        <section className='flex gap-16 px-8 absolute z-10'>
           <div className='relative flex-grow-1 hidden lg:block'>
             <Image
               src='/images/banner-services.webp'
@@ -29,7 +29,7 @@ export default function ServicesPage() {
           width='512'
           height='256'
           alt='ornament'
-          className='hidden absolute bottom-0 inset-x-0 filter-hero dark:filter-hero-dark md:inline-block mx-auto'
+          className='hidden absolute bottom-0 inset-x-0 filter-hero dark:filter-hero-dark lg:inline-block mx-auto'
         />
       </Content>
     </Page>

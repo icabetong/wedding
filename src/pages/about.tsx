@@ -28,7 +28,7 @@ export default function AboutPage() {
             width='512'
             height='256'
             alt='wedding'
-            className='mx-auto rounded-xl mb-8'
+            className='mx-auto rounded-xl mb-8 w-1/2'
           />
           <div className='page-title inline-flex gap-4 items-center'>
             <div>

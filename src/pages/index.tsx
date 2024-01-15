@@ -34,10 +34,13 @@ export default function Home() {
             alt='flower ornament'
             className='absolute -bottom-4 left-0 -z-10 filter-hero dark:filter-hero-dark'
           />
-          <div className='flex-1 text-center md:text-left'>
+          <div className='text-center md:text-left w-1/3'>
             <h2 className='text-3xl md:text-4xl font-bold font-heading leading-tight'>
-              Elegance <span className='text-accent'>Redefined</span>: Crafting
-              Your Unforgettable Day
+              Elegance{' '}
+              <span className='text-accent dark:text-accent-dark'>
+                Redefined
+              </span>
+              : Crafting Your Unforgettable Day
             </h2>
             <p className='text-md text-text dark:text-primary mt-4 font-medium'>
               At Primaestra, we specialize in turning your wedding dreams into a
@@ -67,7 +70,7 @@ export default function Home() {
               </motion.button>
             </div>
           </div>
-          <div className='flex-1 flex items-center justify-center'>
+          <div className='flex items-center justify-center w-2/3'>
             <Image
               src={
                 /* whoever decided to replace the image here should commit seppuku */
@@ -76,7 +79,7 @@ export default function Home() {
               width='512'
               height='512'
               alt='hero image, groom and bride'
-              className='rounded-lg shadow'
+              className='rounded-lg shadow h-[32rem] w-auto'
             />
           </div>
         </section>
